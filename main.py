@@ -1,41 +1,41 @@
 # Print
 from tty import IFLAG
 
-# В Python комментарии начинаются с символа `#`. Компьютер игнорирует всё,
-# что находится после `#` на той же строке. Комментарии используются для
-# объяснения кода человеку-читателю и не влияют на выполнение программы.
+# In Python, comments start with `#`. The computer ignores everything
+# following `#` on the same line. Comments explain the code to human
+# readers and do not affect program execution.
 
 
 print("Hello world")
-# Функция print() выводит указанное содержимое на экран
-# В скобках мы передаем строку "Hello world" в качестве аргумента
+# The print() function displays the specified content on the screen
+# The string "Hello world" is passed as an argument inside the parentheses
 
 print("it's really good")
-# Это еще один вызов функции print()
-# Здесь мы выводим строку "it's really good"
+# This is another call to print()
+# Here we print the string "it's really good"
 
 
-# Переменные
+# Variables
 
 # Variable - String
 
-# Строковые переменные (тип String) используются для хранения текста
+# String variables store text
 
 
 first_name = "M_Lashkevych"
 
-# Создаем переменную с именем first_name и присваиваем ей значение
-# Переменная - это как именованный контейнер для хранения данных
-# Знак "=" используется для присваивания значения переменной
-# "M_Lashkevych" - это строковое значение (текст), заключенное в кавычки
+# Create a variable named first_name and assign it a value
+# A variable is like a named container for storing data
+# The "=" sign assigns a value to a variable
+# "M_Lashkevych" is a string value (text) enclosed in quotes
 
 print(f'Hello {first_name}')
 
-# F-строки позволяют легко вставлять значения переменных в строку
-# Выводим приветствие, используя значение переменной first_name
-# print() - это функция для вывода информации на экран
-# f'...' - это f-строка, которая позволяет вставлять значения переменных прямо в текст
-# {first_name} внутри f-строки будет заменено на фактическое значение переменной
+# F-strings make it easy to insert variable values into a string
+# Print a greeting using the value of first_name
+# print() is a function that displays information on the screen
+# f'...' is an f-string that inserts variable values directly into text
+# {first_name} in the f-string is replaced with the variable's actual value
 
 food = "pizza"
 print (f"You like {food}")
@@ -44,52 +44,52 @@ print(f"My email is: {email}")
 
 # Variable - Integers
 
-#  Integer - это переменная, которая хранит целое число без дробной части.
-# Целое число не должно быть в кавычках
+# An integer is a whole number with no fractional part.
+# An integer must not be enclosed in quotes
 
-# Объявление переменных типа integer
-age = 20  # Создаём переменную age и присваиваем ей значение 20
-quantity = 3  # Создаём переменную quantity и присваиваем ей значение 3
-num_of_students = 30  # Создаём переменную num_of_students и присваиваем ей значение 30
+# Declare integer variables
+age = 20  # Create age and assign it the value 20
+quantity = 3  # Create quantity and assign it the value 3
+num_of_students = 30  # Create num_of_students and assign it the value 30
 
-# Вывод информации с использованием f-строк
-print(f"You're {age} years old")  # Выводим строку, подставляя значение переменной age
-print(f"You're buying {quantity} items")  # Выводим строку, подставляя значение переменной quantity
-print(f"You class has {num_of_students} students")  # Выводим строку, подставляя значение переменной num_of_students
+# Display information using f-strings
+print(f"You're {age} years old")  # Print a string containing the value of age
+print(f"You're buying {quantity} items")  # Print a string containing the value of quantity
+print(f"You class has {num_of_students} students")  # Print a string containing the value of num_of_students
 
 # Variable - float
-# Float - это тип данных, представляющий десятичные числа (числа с дробной частью)
+# Float is a data type for decimal numbers (numbers with a fractional part)
 
-# Объявление переменных типа float
-price = 10.99  # Создаём переменную price и присваиваем ей значение 10.99
-gpa = 3.2      # Создаём переменную gpa и присваиваем ей значение 3.2
-distance = 5.5 # Создаём переменную distance и присваиваем ей значение 5.5
+# Declare float variables
+price = 10.99  # Create price and assign it the value 10.99
+gpa = 3.2      # Create gpa and assign it the value 3.2
+distance = 5.5 # Create distance and assign it the value 5.5
 
-# Вывод информации с использованием f-строк
-print(f"The price is ${price}")  # Выводим строку, подставляя значение переменной price
-print(f"Your gpa is: {gpa}")     # Выводим строку, подставляя значение переменной gpa
-print(f"You run {distance}km")   # Выводим строку, подставляя значение переменной distance
+# Display information using f-strings
+print(f"The price is ${price}")  # Print a string containing the value of price
+print(f"Your gpa is: {gpa}")     # Print a string containing the value of gpa
+print(f"You run {distance}km")   # Print a string containing the value of distance
 
 # Variable - Boolean
-# Boolean - это логический тип данных, который может хранить только два значения: True (истина) или False (ложь).
+# Boolean is a data type with only two values: True or False.
 
-# Объявление переменных типа Boolean
-is_student = False   # Создаём переменную is_student и присваиваем ей значение False
-for_sale = False     # Создаём переменную for_sale и присваиваем ей значение False
-is_online = True     # Создаём переменную is_online и присваиваем ей значение True
+# Declare Boolean variables
+is_student = False   # Create is_student and assign it the value False
+for_sale = False     # Create for_sale and assign it the value False
+is_online = True     # Create is_online and assign it the value True
 
-# Вывод информации с использованием f-строк
+# Display information using f-strings
 #print(f"Are you a student?: {is_student}")
-   # Эта строка будет выводить "Are you a student?: False"
+   # This line would print "Are you a student?: False"
 
 # if condition:
-    # код, который выполнится, если условие истинно
+    # code to run if the condition is true
 # else:
-    # код, который выполнится, если условие ложно
+    # code to run if the condition is false
 
 if is_online:
     print("You're online")
 else:
     print("You're offline")
-   # Этот блок кода будет выполнен, так как is_online имеет значение True
-   # Будет выведено "You're online"
+   # This branch runs because is_online is True
+   # Prints "You're online"
